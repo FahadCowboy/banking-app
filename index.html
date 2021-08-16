@@ -8,38 +8,18 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <section id="container-section" class="w-max my-8 mx-auto">
-        <h1 class="text-center text-5xl mb-12 text-yellow-900">Dashboard of your bank account!</h1>
-
-        <div id="board-area" class="grid gap-4 grid-cols-3">
-            <div id="deposit" class="p-12 bg-red-600 text-white rounded-lg">
-                <h1 class="text-2xl">Deposit</h1>
-                <h2 class="text-2xl">$<span class="text-4xl" id="deposit-amount">00</span></h2>
-            </div>
-            <div id="withdraw" class="p-12 bg-yellow-600 text-white rounded-lg">
-                <h1 class="text-2xl">Withdraw</h1>
-                <h2 class="text-xl">$<span class="text-4xl" id="withdraw-amount">00</span></h2>
-            </div>
-            <div id="balance" class="p-12 bg-blue-600 text-white rounded-lg">
-                <h1 class="text-2xl">Balance</h1>
-                <h2 class="text-2xl">$<span class="text-4xl" id="balance-amount">100</span></h2>
-            </div>
-        </div>
-
-        <div id="input-area" class="grid grid-cols-2 gap-8 mt-12">
-            <div id="deposit-controll" class="bg-green-600 p-12 rounded-lg">
-                <h2 id="withdraw-input-headding" class="text-white text-2xl">Deposit your cash</h2>
-                <input type="text" name="" id="deposit-input" class="my-6 w-full p-2 rounded-md" placeholder="$ Deposit amount"><br>
-                <button id="deposit-btn" class="bg-red-600 text-white py-2 px-4 rounded-md">Deposit</button>
-            </div>
-            <div id="withdraw-controll" class="bg-purple-600 p-12 rounded-lg">
-                <h2 id="withdraw-input-headding" class="text-white text-2xl">Withdraw your cash</h2>
-                <input type="text" name="" id="withdraw-input" class="my-6 w-full p-2 rounded-md" placeholder="$ Withdraw amount"><br>
-                <button id="withdraw-btn" class="bg-red-600 text-white py-2 px-4 rounded-md">Deposit</button>
-            </div>
+    <section id="login-section" class="w-max my-8 mx-auto">
+        <h1 class="text-center text-5xl mb-12 text-yellow-900">Log in your bank account!</h1>
+        <div class="bg-purple-600 w-3/4 p-5 rounded-lg mx-auto">
+            <p class="text-red-100">Type 'email@gmail.com' in the email box.</p>
+            <p class="text-red-100 mb-6 mt3">Type 'password' in the password box.</p>
+            <input type="email" name="" id="email-field" class="mb-6 w-full p-2 rounded-md" placeholder="Your Email"><br>
+            <input type="password" name="" id="password-field" class="mb-6 w-full p-2 rounded-md" placeholder="Your Password">
+            <Div>
+                <Button class="bg-red-600 text-white py-2 px-4 rounded-md" id="submit-btn">Log in</Button>
+            </Div>
         </div>
     </section>
-    
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
